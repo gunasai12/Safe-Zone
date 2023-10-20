@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "560814614559",
+    "firebase_url": "https://crimealertapp-97954-default-rtdb.firebaseio.com",
+    "project_id": "crimealertapp-97954",
+    "storage_bucket": "crimealertapp-97954.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560814614559:android:8afe32fe55e2f0f0690d2a",
+        "android_client_info": {
+          "package_name": "com.example.crime_alert_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVjuI-ZrsajaQpvlX1suVlJIR6af06CJY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
