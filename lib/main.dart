@@ -4,14 +4,13 @@ import 'package:crime_alert_app/firebase_options.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'authentication_page.dart';
-import 'registration_page.dart';
 import 'background.dart';
 import 'CrimeDetailsPage.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:video_player/video_player.dart';
 import 'ChooseTheLocation.dart';
 import 'menu_bar.dart';
-import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'ChatAuthentication.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -227,7 +226,10 @@ class _MyAppState extends State<MyApp> {
                   setState(() {
                     _selectedIconIndex = 2;
                   });
-                  // Handle map screen
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => ChatAuthenticationPage()),
+                  );
                 },
                 child: Icon(
                   Icons.map,
@@ -286,7 +288,7 @@ class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
             aspectRatio: _controller.value.aspectRatio,
             child: VideoPlayer(_controller),
           )
-        : const CircularProgressIndicator(); // You can use any loading indicator here.
+        : const CircularProgressIndicator(); 
   }
 
   @override
